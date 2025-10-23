@@ -1,4 +1,3 @@
-
 setwd("C:/Users/Monik/Desktop/sasr")
 merge=read.table("rep2018.txt", header=T)
 chore=read.table("met2018.txt", header=T)
@@ -25,4 +24,5 @@ right_join <- merge(x = data,             # First data frame
                     by = "ID",             # Common column to merge on
                     all.y = TRUE)  
 write.table(right_join, "met201999.txt")
+
 write.csv(left_join, "123.cvs")
